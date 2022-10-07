@@ -1,0 +1,55 @@
+/* @import font */
+
+
+@media only screen and (max-width: 410px){
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+    }
+
+    #small h2{
+        font-size: small
+    }
+    #small p{
+        font-size: smaller;
+    }
+    
+}
+
+@media only screen and (min-width: 410px){
+    body{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+        background-color: green;
+        
+    }
+
+
+    #medium h2{
+        font-size:larger ;
+    }
+    #medium p{
+        font-size: large;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        max-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        
+        background-color: blue;
+    }
+
+    #large h2{
+        font-size: xx-large;
+    }
+    #larger p{
+        font-size: x-large;
+    }
+}
